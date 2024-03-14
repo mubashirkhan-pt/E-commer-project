@@ -1,0 +1,96 @@
+.top{
+    text-align: center;
+    display: inline-block;
+}
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: goldenrod;
+    position: relative;
+    margin-left: 330px;
+    margin-top: 100px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 1.3s ease-in;
+   padding :50px;
+   border: 2px solid yellow;
+   font-size: 25px;
+   animation: colorAnimate 3s linear 0s infinite alternate-reverse ;
+   
+   
+    
+}
+#box2{
+    height: 150px;
+    width: 150px;
+    background-color: beige;
+    position: relative;
+    margin-left: 50px;
+    margin-top: -210px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 1.3s ease-out;
+    border: 2px solid peachpuff;
+    line-height:100%;
+    padding :30px;
+    font-size: 25px;
+    animation: colorAnimate 3s linear 0s infinite alternate-reverse ;
+   
+
+}
+#box:hover{
+    background-color: blue;
+    color: aliceblue;
+    transform:rotate(360deg)
+}
+#box2:hover{
+     background-color: black;
+     color: aliceblue;
+     transform:rotate(360deg)
+}
+#box3:hover{
+    background-color: black;
+    color: white;
+    transform: rotate(360deg);
+}
+#box3{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(239, 48, 0);
+    position: relative;
+    margin-left: 600px;
+    margin-top: -205px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 1.3s ease-in;
+   padding :50px;
+   border: 2px solid rgb(144, 0, 0);
+   font-size: 25px;
+   animation: colorAnimate 3s linear 0s infinite alternate-reverse ;
+
+}
+@media(max-width: 400px){
+ #box2{
+    background-color: purple;
+ }}
+ body{
+    background-image: url(sky.jpg);
+    background-size: cover;
+ }
+ @keyframes colorAnimate {
+      from{border-radius: 50%;}
+      to{border-radius: 0%;}
+ }
+
+ .loder{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border :15px solid #B592A0;
+    border-top: 15px solid #BBC8CA;
+    animation: loadAnimate 1s ease-in-out 0s infinite normal ;
+ }
+ @keyframes loadAnimate{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+ }
